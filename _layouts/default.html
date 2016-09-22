@@ -1,15 +1,15 @@
 ---
 title: 'This is my Site Title'
 ---
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Site Title {% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
+  <title>Site Title | </title>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <link rel='alternate' type='application/rss+xml' title='RSS' href='SITEURLGOESHERE/blog.rss' />
-  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
-  <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  <link rel='shortcut icon' href='/img/favicon.ico' type='image/x-icon' />
+  <link href='/main.css' rel='stylesheet' />
 
   <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.css" />
   <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css" />
@@ -19,20 +19,9 @@ title: 'This is my Site Title'
 <body>
   <div class='container'>
     <div class='col12 clearfix'>
-      <div class='header col6 margin3 pad4h'>
-        <div class='clearfix col12'>
-          <div class='menu fr'>
-            <!--
-            <a class='{% if page.section == "blog" %}active{% endif %}' href='{{site.baseurl}}/'>Blog</a>
-            <a class='{% if page.url == "about/" %}active{% endif %}' href='{{site.baseurl}}/about'>About</a>
-            <a href='//github.com/prose/starter'>Fork on GitHub</a>
-            -->
-          </div>
-          <h1 class='title'><a href='{{site.baseurl}}/'>{{page.title}}</a></h1>
-        </div>
-      </div>
     </div>
-    {{content}}
+    <div class="home">
+      {{content}}
+    </div>
   </div>
-  <script src='{{site.baseurl}}/site.js'></script>
 </body>
